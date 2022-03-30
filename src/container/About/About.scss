@@ -1,0 +1,264 @@
+@media screen and (max-width: 768px) {
+  .desk-about {
+    display: none;
+  }
+
+  .mobile-about {
+    .transform img,
+    .standOut img {
+      width: 100%;
+    }
+
+    .transform div {
+      height: 0.5rem;
+      width: 7rem;
+      z-index: 0;
+      position: absolute;
+      margin: auto;
+      border: none;
+      bottom: 7.5%;
+      left: 0;
+      right: 0;
+      border-radius: 0.25rem;
+      background-color: rgba(250, 212, 0, 0.25);
+    }
+
+    .standOut div {
+      height: 0.5rem;
+      width: 7rem;
+      z-index: 0;
+      position: absolute;
+      margin: auto;
+      border: none;
+      bottom: 7.5%;
+      left: 0;
+      right: 0;
+      border-radius: 0.25rem;
+      background-color: rgba(254, 120, 103, 0.25);
+    }
+
+    .transform,
+    .standOut {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      section {
+        text-align: center;
+        margin: 2.5rem 1rem 3rem;
+
+        h2 {
+          font-weight: 700;
+          font-family: "Fraunces", serif;
+          color: var(--Very-dark-desaturated-blue);
+        }
+
+        p {
+          margin: 1.5rem 0;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: var(--Dark-grayish-blue);
+        }
+
+        a {
+          color: var(--Very-dark-desaturated-blue);
+          text-decoration: none;
+          font-size: 0.75em;
+          font-weight: 700;
+          font-family: "Fraunces", serif;
+          z-index: 99;
+        }
+      }
+    }
+
+    .graphic-design {
+      background-image: url("../../assets/mobile/image-graphic-design.jpg");
+      height: 600px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      color: var(--graphic-design-text);
+
+      h2 {
+        text-align: center;
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 3rem 1rem;
+        text-align: center;
+      }
+    }
+
+    .photography {
+      background-image: url("../../assets/mobile/image-photography.jpg");
+      height: 600px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      color: var(--photography-text);
+
+      h2 {
+        text-align: center;
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 3rem 1rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-about {
+    display: none;
+  }
+
+  .desk-transform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .desk-transform-content {
+      padding: 8rem;
+
+      h1 {
+        color: var(--Very-dark-desaturated-blue);
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: "Fraunces", serif;
+      }
+
+      p {
+        margin: 2.5rem 0;
+        color: var(--Dark-grayish-blue);
+        line-height: 1.75rem;
+      }
+
+      a {
+        color: var(--Very-dark-desaturated-blue);
+        font-family: "Fraunces", serif;
+        font-size: 1rem;
+        text-decoration: none;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .desk-standOut {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .desk-standOut-content {
+      padding: 8rem;
+
+      order: 2;
+
+      h1 {
+        color: var(--Very-dark-desaturated-blue);
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: "Fraunces", serif;
+      }
+
+      p {
+        margin: 2.5rem 0;
+        color: var(--Dark-grayish-blue);
+        line-height: 1.75rem;
+      }
+
+      a {
+        color: var(--Very-dark-desaturated-blue);
+        font-family: "Fraunces", serif;
+        font-size: 1rem;
+        text-decoration: none;
+      }
+    }
+
+    img {
+      order: 1;
+
+      width: 100%;
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .graphic-design {
+      background-image: url("../../assets/desktop/image-graphic-design.jpg");
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      color: var(--graphic-design-text);
+
+      h2 {
+        margin-top: 50%;
+        text-align: center;
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 2rem 25% 3rem;
+        text-align: center;
+      }
+    }
+
+    .photography {
+      background-image: url("../../assets/desktop/image-photography.jpg");
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      color: var(--photography-text);
+
+      h2 {
+        margin-top: 50%;
+        text-align: center;
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 2rem 25% 3rem;
+        text-align: center;
+      }
+    }
+  }
+}
